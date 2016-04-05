@@ -1,0 +1,8 @@
+<ul>
+  {{#each model as |hearings|}}
+   <h3><a href=  {{hearings.url}}>{{hearings.description}}</a></h3>
+    <li>When: {{hearings.occurs_at}}</li>
+    <li>Room: {{hearings.room}}</li>
+
+  {{/each}}
+</ul>

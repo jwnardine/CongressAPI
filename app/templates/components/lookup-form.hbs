@@ -1,12 +1,15 @@
-<h1>Legislator Lookup</h1>
+<h1>Legislator and Bill Lookup</h1>
 
 <form>
   <div class="form-group">
-    <label for="zip">Put in a Zip Code!</label>
+    <h4>Search legislator by zip code!</h4>
+    <label for="zip">Enter a zip code</label>
     {{input value=zip id="zip"}}
+    <button class="btn btn-primary" {{action 'zipLookup'}}>Find my legislators!</button>
   </div>
 
-  <button class="btn btn-primary" {{action 'zipLookup'}}>Submit</button>
 </form>
 
   <button class="btn btn-primary" {{action 'billLookup'}}>See today's bills!</button>
+
+  <button class="btn btn-primary" {{action 'hearingsLookup'}}>See today's hearings!</button>

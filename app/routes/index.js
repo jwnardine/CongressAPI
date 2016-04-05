@@ -7,7 +7,10 @@ export default Ember.Route.extend({
       this.transitionTo('results', params.zip);
     },
     billLookup() {
-      this.transitionTo('results-bill')
+      this.transitionTo('results-bill');
+    },
+    hearingsLookup() {
+      this.transitionTo('results-hearings');
     }
   }
 });

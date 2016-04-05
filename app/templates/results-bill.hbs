@@ -1,9 +1,9 @@
 <ul>
   {{#each model as |bill|}}
+    <a href=  {{bill.url}}>{{bill.question}}</a>
     <li>ID: {{bill.bill_id}}</li>
-    <li>{{bill.question}}</li>
     <li>Majority required: {{bill.required}}</li>
     <li>Outcome: {{bill.result}}</li>
-      <br>See bill: <a href=  {{bill.url}}>{{bill.question}}</a>
+    <br>
   {{/each}}
 </ul>

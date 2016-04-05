@@ -7,9 +7,12 @@ export default Ember.Component.extend({
         zip: this.get('zip')
       };
       this.sendAction('zipLookup', params);
-    }
+    },
     billLookup() {
       this.sendAction('billLookup');
+    },
+    hearingsLookup() {
+      this.sendAction('hearingsLookup');
     }
   }
 });

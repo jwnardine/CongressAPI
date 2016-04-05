@@ -1,5 +1,8 @@
 <ul>
   {{#each model as |legislator|}}
-    <li> {{legislator.first_name}} {{legislator.last_name}}<br>Contact: <a href=  {{legislator.contact_form}}>{{legislator.contact_form}}</a></li>
+    <h2> {{legislator.first_name}} {{legislator.last_name}}</h2>
+    <li>Contact: <a href=  {{legislator.contact_form}}>{{legislator.contact_form}}</a></li>
+    <li>Twitter: <a href= "http://www.twitter.com/{{legislator.twitter_id}}">{{legislator.twitter_id}}</a></li>
+    <br>
   {{/each}}
 </ul>
