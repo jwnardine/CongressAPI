@@ -1,0 +1,14 @@
+header {
+  background-image: url("http://conservativepost.com/wp-content/uploads/2015/11/original_us-congress.jpg");
+
+}
+
+h1.headerFont {
+  color: white;
+  font-size: 90px;
+  text-align: center;
+}
+
+header img {
+  width: 200px;
+}
